@@ -36,6 +36,7 @@ public class XmlSuiteCreator {
 		
 		
 		
+		
 		System.out.println("xmlsuite");
 		XmlSuite suite=new XmlSuite();
 		suite.setName("TestSuite");
@@ -43,6 +44,10 @@ public class XmlSuiteCreator {
 		     key = entry.getKey();
 		    tab = entry.getValue();
 		}
+		
+		
+		suite.setParallel("tests");
+		suite.setThreadCount(2);
 		System.out.println("$$$$$$$$$$$$$$$$$$$$");
 		System.out.println(key);
 		System.out.println(tab);

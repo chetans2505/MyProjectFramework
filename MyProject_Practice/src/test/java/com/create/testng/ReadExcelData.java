@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ReadExcelData {
 public static ArrayList<String> getInfo() throws Throwable {
 	 String key = null, tab = null;
-	FileInputStream fis=new FileInputStream("C:\\Users\\Administrator\\Desktop\\testfile.xlsx");
+	FileInputStream fis=new FileInputStream("C:\\Users\\Administrator\\git2\\MyProject_Practice\\ExcelFiles\\testfile.xlsx");
 	Workbook wb=WorkbookFactory.create(fis);
 	Sheet sht=wb.getSheetAt(0);
 	int val=sht.getLastRowNum();

@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="33" started-at="2017-11-16T10:43:49Z" finished-at="2017-11-16T10:43:49Z">
+  <suite name="Default suite" duration-ms="594" started-at="2017-11-16T12:42:02Z" finished-at="2017-11-16T12:42:03Z">
     <groups>
     </groups>
-    <test name="ExTest" duration-ms="33" started-at="2017-11-16T10:43:49Z" finished-at="2017-11-16T10:43:49Z">
-      <class name="test.chet.TC01">
-        <test-method status="PASS" signature="test1()[pri:0, instance:test.chet.TC01@27efef64]" name="test1" duration-ms="8" started-at="2017-11-16T16:13:49Z" finished-at="2017-11-16T16:13:49Z">
+    <test name="Default test" duration-ms="594" started-at="2017-11-16T12:42:02Z" finished-at="2017-11-16T12:42:03Z">
+      <class name="com.create.testng.XmlSuiteCreator">
+        <test-method status="PASS" signature="test11()[pri:0, instance:com.create.testng.XmlSuiteCreator@91161c7]" name="test11" duration-ms="574" started-at="2017-11-16T18:12:02Z" finished-at="2017-11-16T18:12:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- test.chet.TC01 -->
-      <class name="test.chet.TC03">
-        <test-method status="PASS" signature="test2()[pri:0, instance:test.chet.TC03@3e6fa38a]" name="test2" duration-ms="1" started-at="2017-11-16T16:13:49Z" finished-at="2017-11-16T16:13:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- test.chet.TC03 -->
-      <class name="test.chet.TC06">
-        <test-method status="PASS" signature="test2()[pri:0, instance:test.chet.TC06@66a3ffec]" name="test2" duration-ms="2" started-at="2017-11-16T16:13:49Z" finished-at="2017-11-16T16:13:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- test.chet.TC06 -->
-    </test> <!-- ExTest -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- test11 -->
+      </class> <!-- com.create.testng.XmlSuiteCreator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

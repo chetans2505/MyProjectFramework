@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="TestSuite" parallel="tests">
   <parameter name="browser" value="firefox"/>
-  <test name="ExTest">
+  <test name="Test2">
     <classes>
       <class name="test.chet.TC01"/>
       <class name="test.chet.TC03"/>
       <class name="test.chet.TC06"/>
     </classes>
-  </test> <!-- ExTest -->
+  </test> <!-- Test2 -->
 </suite> <!-- TestSuite -->

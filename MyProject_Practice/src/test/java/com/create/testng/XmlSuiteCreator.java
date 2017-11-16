@@ -23,8 +23,22 @@ public class XmlSuiteCreator {
 	public void test11() throws EncryptedDocumentException, InvalidFormatException, IOException {
 		String key = null;
 		String tab = null;
+		HashMap<String, String> browserExec=new HashMap<String, String>();
 		
 		String execType=ExcelValues.readData("C:\\Users\\Administrator\\Desktop\\testfile.xlsx", "Sheet2", 0,1);
+		
+		String browsers=ExcelValues.readData("C:\\Users\\Administrator\\git2\\MyProject_Practice\\ExcelFiles\\testfile.xlsx", "Sheet2", 1,1);
+		String[] brow = browsers.split(",");
+		if(brow.length>1){
+			for ( Map.Entry<String, String> entry : browserExec.entrySet()) {
+			     key = entry.getKey();
+			    tab = entry.getValue();
+			    browserExec.put("browser", tab);
+			}
+			
+			
+		}
+		
 		System.out.println(execType);
 		
 		if(execType.equalsIgnoreCase("parallel")){
@@ -52,9 +66,11 @@ public class XmlSuiteCreator {
 		System.out.println(key);
 		System.out.println(tab);
 		suite.setParameters(browType);
-		
-		XmlTest test1=new XmlTest();
-		test1.setName("ExTest");
+		//ArrayList testNames=new ArrayList();
+		XmlTest test1 = null;
+		for(int j=1;j<=2;j++){
+			 test1=new XmlTest();
+		test1.setName("Test"+j);
 		List<XmlClass> classes=new ArrayList<XmlClass>();
 		ArrayList< String > arr3=new ArrayList<String>();
 		try {
@@ -70,6 +86,7 @@ public class XmlSuiteCreator {
 			classes.add(new XmlClass("test.chet."+arr3.get(i)));
 		}
 		test1.setXmlClasses(classes);
+		}
 		
 		List<XmlSuite> suite1=new ArrayList<XmlSuite>();
 		//suite1.add(suite);

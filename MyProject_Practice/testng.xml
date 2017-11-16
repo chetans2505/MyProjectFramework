@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+  <parameter name="browser" value="firefox"/>
+  <test name="ExTest">
+    <classes>
+      <class name="test.chet.TC01"/>
+      <class name="test.chet.TC03"/>
+      <class name="test.chet.TC06"/>
+    </classes>
+  </test> <!-- ExTest -->
+</suite> <!-- TestSuite -->

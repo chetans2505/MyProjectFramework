@@ -18,7 +18,6 @@ import org.testng.xml.XmlTest;
 import readexcel.ExcelValues;
 
 public class XmlSuiteCreator {
-	
 	@Test
 	public void test11() throws EncryptedDocumentException, InvalidFormatException, IOException {
 		String key = null;
@@ -26,7 +25,6 @@ public class XmlSuiteCreator {
 		HashMap<String, String> browserExec=new HashMap<String, String>();
 		
 		String execType=ExcelValues.readData("C:\\Users\\Administrator\\Desktop\\testfile.xlsx", "Sheet2", 0,1);
-		
 		String browsers=ExcelValues.readData("C:\\Users\\Administrator\\git2\\MyProject_Practice\\ExcelFiles\\testfile.xlsx", "Sheet2", 1,1);
 		String[] brow = browsers.split(",");
 		if(brow.length>1){
@@ -35,33 +33,22 @@ public class XmlSuiteCreator {
 			    tab = entry.getValue();
 			    browserExec.put("browser", tab);
 			}
-			
-			
 		}
-		
 		System.out.println(execType);
-		
 		if(execType.equalsIgnoreCase("parallel")){
-		
-		
-		}
+				}
 		HashMap<String, String> browType=new HashMap<String, String >();
 		browType.put("browser", "firefox");
-		
-		
-		
-		
 		System.out.println("xmlsuite");
 		XmlSuite suite=new XmlSuite();
 		suite.setName("TestSuite");
 		for ( Map.Entry<String, String> entry : browType.entrySet()) {
 		     key = entry.getKey();
 		    tab = entry.getValue();
-		}
-		
-		
+		}	
 		suite.setParallel("tests");
-		suite.setThreadCount(2);
+		//System.out.println(ExcelValues.readData("C:\\Users\\Administrator\\git2\\MyProject_Practice\\ExcelFiles\\testfile.xlsx", "Sheet2", 5,2));
+		suite.setThreadCount(Integer.parseInt(ExcelValues.readData("C:\\Users\\Administrator\\git2\\MyProject_Practice\\ExcelFiles\\testfile.xlsx", "Sheet2", 2,1)));
 		System.out.println("$$$$$$$$$$$$$$$$$$$$");
 		System.out.println(key);
 		System.out.println(tab);

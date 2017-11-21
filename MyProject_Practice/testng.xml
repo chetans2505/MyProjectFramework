@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="TestSuite" parallel="tests">
-  <parameter name="browser" value="firefox"/>
-  <test name="Test2">
+<suite name="Amazon">
+  <test name="TCase1">
     <classes>
       <class name="test.chet.TC01"/>
-      <class name="test.chet.TC03"/>
-      <class name="test.chet.TC06"/>
     </classes>
-  </test> <!-- Test2 -->
-</suite> <!-- TestSuite -->
+  </test> <!-- TCase1 -->
+</suite> <!-- Amazon -->

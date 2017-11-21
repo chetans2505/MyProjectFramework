@@ -1,5 +1,7 @@
 package com.create.testng;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,22 +13,28 @@ import org.testng.xml.XmlTest;
 
 public class GenerateXML {
 	@Test
-	public  void test() {
+	public  void test() throws IOException {
 		XmlSuite suite = new XmlSuite();
-		   suite.setName("OMS");
+		   suite.setName("Amazon");
 		   XmlTest test1 = new XmlTest(suite);
 		   test1.setName("TCase1");
 		   List<XmlClass> classes = new ArrayList<XmlClass>();
 		   classes.add(new XmlClass("test.chet.TC01"));
+		   test1.setXmlClasses(classes);
 		   List<XmlSuite> suite_a = new ArrayList<XmlSuite>();
 		   suite_a.add(suite);
+		   
+		   
+		   FileWriter writer=new FileWriter("testng.xml");
+		   writer.write(suite.toXml());
+		   writer.flush();
+		   writer.close();
 		   TestNG tng = new TestNG();
 		   tng.setXmlSuites(suite_a);
 		   tng.run();
-		   XmlSuite suite1 = new XmlSuite();
-		   suite1.setName("OMS");
+		  
 		   
-		   XmlTest test = new XmlTest(suite1);
+		 /*  XmlTest test = new XmlTest(suite1);
 		   test.setName("Case1");
 		   List<XmlClass> classes1 = new ArrayList<XmlClass>();
 		   classes1.add(new XmlClass("test.chet.TC02"));
@@ -36,7 +44,7 @@ public class GenerateXML {
 		   TestNG tng1 = new TestNG();
 		   tng1.setXmlSuites(suites);
 		   System.out.println("suite created");
-		   tng1.run();
+		   tng1.run();*/
 	}
 
 }

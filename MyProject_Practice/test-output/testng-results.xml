@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="594" started-at="2017-11-16T12:42:02Z" finished-at="2017-11-16T12:42:03Z">
+  <suite name="Default suite" duration-ms="270" started-at="2017-11-21T06:48:52Z" finished-at="2017-11-21T06:48:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="594" started-at="2017-11-16T12:42:02Z" finished-at="2017-11-16T12:42:03Z">
-      <class name="com.create.testng.XmlSuiteCreator">
-        <test-method status="PASS" signature="test11()[pri:0, instance:com.create.testng.XmlSuiteCreator@91161c7]" name="test11" duration-ms="574" started-at="2017-11-16T18:12:02Z" finished-at="2017-11-16T18:12:03Z">
+    <test name="Default test" duration-ms="270" started-at="2017-11-21T06:48:52Z" finished-at="2017-11-21T06:48:52Z">
+      <class name="com.create.testng.GenerateXML">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.create.testng.GenerateXML@3532ec19]" name="test" duration-ms="252" started-at="2017-11-21T12:18:52Z" finished-at="2017-11-21T12:18:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test11 -->
-      </class> <!-- com.create.testng.XmlSuiteCreator -->
+        </test-method> <!-- test -->
+      </class> <!-- com.create.testng.GenerateXML -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

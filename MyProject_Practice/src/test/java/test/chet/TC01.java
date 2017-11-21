@@ -9,10 +9,10 @@ public class TC01 {
 	WebDriver driver;
 	@Test
 	public void test1(){
-		System.out.println("sample");
+	/*	System.out.println("sample");
 		System.setProperty("webdriver.chrome.driver","D:\\CSProject\\MyProject_Practice\\drivers\\chromedriver.exe");
 		   ChromeDriver f = new ChromeDriver();
-		   f.get("http://www.monster.com");
+		   f.get("http://www.monster.com");*/
 		//driver=new FirefoxDriver();
 	}
 }
